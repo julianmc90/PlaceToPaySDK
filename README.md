@@ -190,7 +190,8 @@ $placeToPay->createTransactionMultiCredit();
 
 ``` 
 
-
+## Note
+This is made for a testing my skills for PlaceToPay company
 
 
 
