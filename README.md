@@ -55,7 +55,7 @@ $placeToPay =  new PlaceToPay([
 
 ## Getting Bank List
 
-To get the bank list use 
+To get the bank list use, this is loaded from cahe each and refreshed each day
 
 ```php
 $placeToPay->getBankList();
