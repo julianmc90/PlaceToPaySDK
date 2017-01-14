@@ -12,13 +12,13 @@ PlaceToPaySDK For PHP
 
 Require this autoload
 
-```
+```php
 require_once __DIR__ . '/place-to-pay-sdk/vendor/autoload.php';
 
 use PlaceToPay\PlaceToPay;
 ```
 
-```
+``` 
 /**
  * Setting PlaceToPay Object 
  * @var PlaceToPay
@@ -52,13 +52,13 @@ $placeToPay =  new PlaceToPay([
 
 To get the bank list use 
 
-```
+```php
 $placeToPay->getBankList();
 ```
 
 ## Setting up a PSE Transaction Request
 
-```
+```php
 /**
  * payer, buyer and shipping follows the next format
  * @var Array
@@ -81,13 +81,13 @@ $payer = Array(
 
 Additional data
 
-```
+```php
 /**
  * Additional data follows the next format
  * @var array
  */
-
 $additionalData = Array();
+
 /**
  * could be added more indexes to fit your needs
  */
@@ -95,7 +95,8 @@ $additionalData[] = ['name'=>'', 'value'=>''];
 ```
 
 The transaction request need the following information
-```
+
+```php
 /**
  * To set the Transaction request
  * follow this format 
@@ -121,7 +122,7 @@ $placeToPay->setPseTransactionRequest([
 ```
 
 Create and send the transaction
-```
+```php
 $placeToPay->createTransaction();
 
 // Get transaction information
@@ -138,7 +139,7 @@ $placeToPay->getTransactionInformation($identifier);
 ## Setting up a PSE Transaction MultiCredit Request
 
 Needs Credits to be setup
-``` 
+```php
 /**
  * Credits follows the next format
  * @var array
@@ -156,10 +157,10 @@ $credits[] = [
     'description' 	=>''
 ];
 
-
 ``` 
 The transaction multicredit request needs the following information
-``` 
+
+```php 
 $placeToPay->setPseTransactionMultiCreditRequest([
          'bankCode'      => '', 
          'bankInterface' => '', 
@@ -180,8 +181,8 @@ $placeToPay->setPseTransactionMultiCreditRequest([
     ]);
 ``` 
 
-``` 
 Creates and gets the transaction response
+```php 
 $placeToPay->createTransactionMultiCredit();
 
 ``` 
