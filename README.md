@@ -9,11 +9,15 @@ PlaceToPaySDK For PHP
 
 ## Installation
 
+Install using composer
+```
+composer require julianmc90/place-to-pay-sdk:dev-master@dev
+```
 
 Require this autoload
 
 ```php
-require_once __DIR__ . '/place-to-pay-sdk/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 use PlaceToPay\PlaceToPay;
 ```
