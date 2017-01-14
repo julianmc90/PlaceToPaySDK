@@ -18,6 +18,7 @@ require_once __DIR__ . '/place-to-pay-sdk/vendor/autoload.php';
 use PlaceToPay\PlaceToPay;
 ```
 
+Create and configure a PlaceToPay Object
 ```php
 /**
  * Setting PlaceToPay Object 
