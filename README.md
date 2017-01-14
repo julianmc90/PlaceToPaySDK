@@ -43,7 +43,7 @@ $placeToPay =  new PlaceToPay([
         /**
          * Timezone (Optional) defaults to America/Bogota
          */
-        //'timeZone'
+        //'timeZone' => ''
 	]);
 
 ```
