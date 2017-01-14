@@ -55,6 +55,7 @@ To get the bank list use
 
 ```php
 $placeToPay->getBankList();
+
 ```
 
 ## Setting up a PSE Transaction Request
@@ -183,6 +184,7 @@ $placeToPay->setPseTransactionMultiCreditRequest([
 ``` 
 
 Creates and gets the transaction response
+
 ```php 
 $placeToPay->createTransactionMultiCredit();
 
